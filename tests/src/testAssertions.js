@@ -22,6 +22,7 @@ module.exports = {
       test.equals(results.passed, 0);
       test.equals(results.failed, 1);
       test.equals(results.errors, 0);
+      test.equals(results.errorsMessages, null);
       test.equals(results.skipped, 0);
       test.equals(results.tests[0].message, 'Testing if element <#weblogin> is present.');
       test.equals(results.tests[0].failure, 'Expected "present" but got: "not present"');
@@ -46,6 +47,7 @@ module.exports = {
       test.equals(results.passed, 1);
       test.equals(results.failed, 0);
       test.equals(results.errors, 0);
+      test.equals(results.errorsMessages, null);
       test.equals(results.skipped, 0);
       test.equals(results.tests[0].message, 'Testing if element <#weblogin> is present.');
       test.equals(results.tests[0].failure, false);
